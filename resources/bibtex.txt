@@ -1,6 +1,9 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@misc{rajan2024effectivenessdatasetalignmentfake,
+      title={On the Effectiveness of Dataset Alignment for Fake Image Detection}, 
+      author={Anirudh Sundara Rajan and Utkarsh Ojha and Jedidiah Schloesser and Yong Jae Lee},
+      year={2024},
+      eprint={2410.11835},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2410.11835}, 
 }
