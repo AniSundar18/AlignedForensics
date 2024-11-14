@@ -215,10 +215,10 @@
 
 	<hr>
 	<table align=center width=850px>
-		<center><h1>Training on reconstructions mitigates spurious correlations!</h1></center>
+		<center><h1>Brief Overview</h1></center>
 		<tr>
 			<td>
-				Resolution mismatch can cause spurious correlations, we observe such issues in several prominent fake image detectors. For latent diffusion models, we propose a simple solution, where we reconstruct the real images by passing them through the autoencoder of the latent model. Existing methods use images at different resolutions to train a detector. Furthermore, the semantic content is also different. Such misalignment can force the detector to learn spurious correlations. Some popular baselines associate resizing artifacts with real/fake images. Our method can mitigate the learning of such false patterns.
+				We observe that using misaligned data (in terms of resolution, compression etc) to train a fake image detector can induce the learning of false patterns. For the family of latent-diffusion models, we propose a simple fix. We reconstruct the real images using the latent diffusion VAE (instead of relying on the denoising process) and train a fake image detector on those images. We empirically demonstrate that a model trained this way is less-likely to learn spurious correlations. For example, an existing method (Corvi) learns to associate upsampling with fake images and downsampling with real images, by training the same detector using our approach we are able to sidestep such issues.
 			</td>
 		</tr>
 	</table>
