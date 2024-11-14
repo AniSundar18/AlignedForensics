@@ -240,7 +240,7 @@
 					</center>
 				</td>
 		</tr>
-			<tr>
+		<tr>
 			<td>
 				In addition to being computationally inexpensive, our method is also more data-efficient. Since the real and fake images are near-identical, the detector is forced to look for more fundamental patterns as opposed to semantic patterns during training.
 			</td>
@@ -249,6 +249,25 @@
 				<td width=260px>
 					<center>
 						<img class="round" style="width:500px" src="./resources/data_eff.png"/>
+					</center>
+				</td>
+		</tr>
+		<tr>
+			<td>
+				Furthermore, by leveraging an aligned dataset, we can train an effective fake image detector, even if the training data is semantically unrelated to the testing data. We demonstrate this by training a model using graphics generated (shaders) data and testing it on natural images. The promising performance of a detector trained in such a manner shows the efficacy of dataset alignment.
+			</td>
+		</tr>
+		<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:500px" src="./resources/teasershaders.png"/>
+					</center>
+				</td>
+		</tr>
+		<tr>
+				<td width=260px>
+					<center>
+						<img class="round" style="width:500px" src="./resources/data_shade.png"/>
 					</center>
 				</td>
 		</tr>
